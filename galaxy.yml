@@ -1,0 +1,18 @@
+namespace: huguesgr
+name: jwks_jwt
+version: 0.1.0
+readme: README.md
+authors:
+  - Hugues Granger (@huguesgr)
+description: This module generates a JWKS containing a single JWK, along with a signed JWT which never expires
+license:
+  - MIT
+# license_file: ''
+tags:
+  - 'jwks'
+  - 'jwt'
+dependencies: {}
+repository: https://github.com/huguesgr/jwks_jwt
+issues: hhttps://github.com/huguesgr/jwks_jwt/issues
+build_ignore:
+  - 'venv'

@@ -1,0 +1,6 @@
+---
+- hosts: test
+  tasks:
+    - huguesgr.jwks_jwt.generate:
+        issuer: myissuer
+        subject: mysubject

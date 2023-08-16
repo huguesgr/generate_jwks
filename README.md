@@ -1,8 +1,8 @@
-## Ansible JWKS and JWT generator module
+# Ansible JWKS and JWT generator module
 
 This collection provides a module to generate a JWKS along with a valid JWT token
 
-# Installation
+## Installation
 
 Requirements: `pyjwt==2.8.0`
 

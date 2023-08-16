@@ -75,7 +75,11 @@ def generate(issuer: str, subject: str, public_exponent: int, key_size: int, exp
         "sub": subject,
     }
     if expiry != 0:
-        payload['exp'] = int(round((datetime.datetime.now() + datetime.timedelta(days=expiry)).timestamp()))
+        payload["exp"] = str(
+            round(
+                (datetime.datetime.now() + datetime.timedelta(days=expiry)).timestamp()
+            )
+        )
 
     private_key = rsa.generate_private_key(
         public_exponent=public_exponent,
